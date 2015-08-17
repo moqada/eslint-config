@@ -1,1 +1,1 @@
-extends: "moqada/es5"
+extends: moqada/es5
