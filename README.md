@@ -12,30 +12,24 @@ npm install --save-dev eslint eslint-config-moqada
 
 ## Usage
 
-Add `.eslintrc`.
+Add `.eslintrc` (YAML).
 
 ### ES6
 
-```
-{
-  "extends": "moqada"
-}
+```yaml
+extends: moqada
 ```
 
 ### ES5
 
-```
-{
-  "extends": "moqada/es5"
-}
+```yaml
+extends: moqada/es5
 ```
 
 ### React
 
-```
-{
-  "extends": "moqada/react"
-}
+```yaml
+extends: moqada/react
 ```
 
 #### Additional Requirements
