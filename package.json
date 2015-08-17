@@ -1,0 +1,34 @@
+{
+  "name": "eslint-config-moqada",
+  "version": "0.0.0",
+  "description": "My personal ESLint configurations.",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "react.js",
+    "es5.js"
+  ],
+  "scripts": {
+    "test": "bash test.sh"
+  },
+  "dependencies": {
+    "extend": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^1.1.0"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "moqada",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moqada/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moqada/eslint-config/issues"
+  },
+  "homepage": "https://github.com/moqada/eslint-config#readme"
+}
