@@ -49,7 +49,7 @@ npm install --save-dev eslint-plugin-react
 [travis-image]: https://img.shields.io/travis/moqada/eslint-config.svg
 [daviddm-url]: https://david-dm.org/moqada/eslint-config
 [daviddm-image]: https://img.shields.io/david/moqada/eslint-config.svg
-[daviddm-dev-url]: https://david-dm.org/moqada/eslint-config#info=devDependencie
+[daviddm-dev-url]: https://david-dm.org/moqada/eslint-config#info=devDependencies
 [daviddm-dev-image]: https://img.shields.io/david/dev/moqada/eslint-config.svg
 [license-url]: http://opensource.org/licenses/MIT
 [license-image]: https://img.shields.io/npm/l/eslint-config-moqada.svg
