@@ -341,7 +341,7 @@ module.exports = {
     'array-bracket-spacing': 2,
     // 1行ブロック内の空白スタイル
     // http://eslint.org/docs/rules/block-spacing
-    'block-spacing': [2, 'always'],
+    'block-spacing': 0,  // brace-style で 1 行ブロックを制限しているため不要
     // 波括弧の書き方
     // http://eslint.org/docs/rules/brace-style
     'brace-style': [2, '1tbs', {'allowSingleLine': false}],
