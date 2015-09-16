@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-moqada",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "My personal ESLint configurations.",
   "main": "index.js",
   "files": [
