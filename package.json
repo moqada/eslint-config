@@ -5,6 +5,7 @@
   "main": "index.js",
   "files": [
     "index.js",
+    "cli.js",
     "react.js",
     "es5.js"
   ],

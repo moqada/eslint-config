@@ -31,6 +31,12 @@ extends: moqada
 extends: moqada/es5
 ```
 
+### CLI
+
+```yaml
+extends: moqada/cli
+```
+
 ### React
 
 ```yaml
