@@ -41,9 +41,6 @@ module.exports = extend(true, {}, base, {
     // 未定義の React コンポーネントを使用禁止
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-undef.md
     'react/jsx-no-undef': 2,
-    // JSX 属性のクオートスタイル
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-quotes.md
-    'react/jsx-quotes': [2, 'double'],
     // propTypes の定義をアルファベット順に制限
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-prop-types.md
     'react/jsx-sort-prop-types': 2,

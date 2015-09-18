@@ -386,7 +386,7 @@ module.exports = {
     'indent': [2, 2],
     // JSX 属性のクオートスタイル
     // http://eslint.org/docs/rules/jsx-quotes
-    'jsx-quotes': 0,  // react/jsx-quotes で設定済
+    'jsx-quotes': [2, 'prefer-double'],
     // オブジェクトリテラルのキーまわり空白スタイル
     // http://eslint.org/docs/rules/key-spacing
     'key-spacing': [2, { 'beforeColon': false, 'afterColon': true }],
