@@ -485,7 +485,7 @@ module.exports = {
     'space-before-function-paren': [2, 'never'],
     // 特定キーワードの前の空白
     // http://eslint.org/docs/rules/space-before-keywords
-    'space-before-keywords': 0,  // buggy
+    'space-before-keywords': [2, 'always'],
     // 括弧内の空白
     // http://eslint.org/docs/rules/space-in-parens
     'space-in-parens': [2, 'never'],
