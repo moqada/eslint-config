@@ -525,7 +525,7 @@ module.exports = {
      */
     // arrow function body の中括弧スタイル
     // http://eslint.org/docs/rules/arrow-body-style
-    'arrow-body-style': [2, 'as-needed'],
+    'arrow-body-style': 0,  // 1文が長くなってしまう場合には中括弧で改行したい
     // arrow function の括弧スタイル
     // http://eslint.org/docs/rules/arrow-parens
     'arrow-parens': [2, 'as-needed'],
