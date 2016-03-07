@@ -215,8 +215,7 @@ module.exports = {
     'no-magic-numbers': [2, {
       'enforceConst': true,  // const に縛りたい
       'ignore': [-2, -1, 0, 1, 2],
-      'ignoreArrayIndexes': true,  // 配列の添字は許可
-      'ignoreJSXNumbers': true  // JSX内は許可
+      'ignoreArrayIndexes': true  // 配列の添字は許可
     }],
     // 複数空白禁止
     // http://eslint.org/docs/rules/no-multi-spaces
