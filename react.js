@@ -30,7 +30,7 @@ module.exports = extend(true, {}, base, {
      */
     // displayName属性有無
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md
-    'react/display-name': [2, {'acceptTranspilerName': true}],
+    'react/display-name': [2, {'ignoreTranspilerName': false}],
     // 曖昧な PropTypes 禁止
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md
     'react/forbid-prop-types': 1,  // きつそうなので警告まで
