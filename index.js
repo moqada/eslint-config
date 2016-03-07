@@ -212,7 +212,12 @@ module.exports = {
     'no-loop-func': 2,
     // マジックナンバー禁止
     // http://eslint.org/docs/rules/no-magic-numbers
-    'no-magic-numbers': [2, {enforceConst: true, ignore: [-2, -1, 0, 1, 2], ignoreArrayIndexes: true}],  // const に縛りたい
+    'no-magic-numbers': [2, {
+      'enforceConst': true,  // const に縛りたい
+      'ignore': [-2, -1, 0, 1, 2],
+      'ignoreArrayIndexes': true,  // 配列の添字は許可
+      'ignoreJSXNumbers': true  // JSX内は許可
+    }],
     // 複数空白禁止
     // http://eslint.org/docs/rules/no-multi-spaces
     'no-multi-spaces': 2,
@@ -326,6 +331,9 @@ module.exports = {
     // 既存変数の label 使用禁止
     // http://eslint.org/docs/rules/no-label-var
     'no-label-var': 2,
+    // 指定グローバル変数の使用禁止
+    // http://eslint.org/docs/rules/no-restricted-globals
+    'no-restricted-globals': 0,  // いったん指定するものなし
     // scope 内の同名変数定義禁止
     // http://eslint.org/docs/rules/no-shadow
     'no-shadow': 2,
@@ -457,6 +465,9 @@ module.exports = {
     // var, let, const 後の空行
     // http://eslint.org/docs/rules/newline-after-var
     'newline-after-var': 0,
+    // returnの前に空行を必須化
+    // http://eslint.org/docs/rules/newline-before-return
+    'newline-before-return': 0,
     // 1行あたりのchain呼出回数を制限
     // http://eslint.org/docs/rules/newline-per-chained-call
     'newline-per-chained-call': [2, {'ignoreChainWithDepth': 3}], // 1行に3つ以上のchainを警告
