@@ -9,9 +9,9 @@
   "author": "moqada",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^2.2.0",
+    "eslint": "^2.3.0",
     "eslint-config-moqada": "file:..",
-    "eslint-plugin-react": "^4.1.0"
+    "eslint-plugin-react": "^4.2.0"
   },
   "private": true
 }
