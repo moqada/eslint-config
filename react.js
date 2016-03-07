@@ -60,7 +60,7 @@ module.exports = extend(true, {}, base, {
     'react/jsx-key': 2,
     // 1行あたりの最大属性数
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md
-    'react/jsx-max-props-per-line': [2, 2],
+    'react/jsx-max-props-per-line': [2, {'maximum': 2}],
     // propsでの.bind() or arrow function禁止
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
     'react/jsx-no-bind': 0,  // flowの都合上bindつかってる
