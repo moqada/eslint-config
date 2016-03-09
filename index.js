@@ -550,7 +550,7 @@ module.exports = {
     'semi-spacing': [2, {'before': false, 'after': true}],
     // importをアルファベット順に制限
     // http://eslint.org/docs/rules/sort-imports
-    'sort-imports': 2,
+    'sort-imports': 0,  // 期待するソートじゃない
     // 変数定義をアルファベット順に制限
     // http://eslint.org/docs/rules/sort-vars
     'sort-vars': 2,
