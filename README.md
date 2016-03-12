@@ -19,34 +19,91 @@ npm install --save-dev eslint eslint-config-moqada
 
 Add `.eslintrc` (YAML).
 
-### ES6
+### Summary
+
+- **Base**
+  - `moqada`: ES2015
+  - `moqada/es5`: ES5
+- **Optional**
+  - `moqada/browser`: Browser env
+  - `moqada/cli`: for CLI (Node.js env)
+  - `moqada/flow`: for Flow
+  - `moqada/flow-jsdoc`: for JSDoc and Flow
+  - `moqada/node`: for Node.js env
+  - `moqada/react`: for React
+  - `moqada/react-native`: for React Native
+  - `moqada/mocha`: for Testing mocha
+
+### Examples
+
+#### ES6 (Node.js)
 
 ```yaml
-extends: moqada
+extends:
+  - moqada
+  - moqada/node
 ```
 
-### ES5
+#### ES5 (Browser)
 
 ```yaml
-extends: moqada/es5
+extends:
+  - moqada/es5
+  - moqada/browser
 ```
 
-### CLI
+#### CLI
 
 ```yaml
-extends: moqada/cli
+extends:
+  - moqada
+  - moqada/cli
 ```
 
-### React
+#### React
 
 ```yaml
-extends: moqada/react
+extends:
+  - moqada
+  - moqada/browser
+  - moqada/react
 ```
 
-#### Additional Requirements
+##### Additional Requirements
 
 ```
 npm install --save-dev eslint-plugin-react
+```
+
+#### React Native
+
+```yaml
+extends:
+  - moqada
+  - moqada/react-native
+```
+
+##### Additional Requirements
+
+```
+npm install --save-dev eslint-plugin-react eslint-plugin-react-native
+```
+
+
+#### React Native with Flow
+
+```yaml
+extends:
+  - moqada
+  - moqada/react-native
+  - moqada/flow
+  - moqada/flow-jsdoc
+```
+
+##### Additional Requirements
+
+```
+npm install --save-dev eslint-plugin-jsdoc eslint-plugin-react eslint-plugin-react-native
 ```
 
 [npm-url]: https://www.npmjs.com/package/eslint-config-moqada
