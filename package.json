@@ -15,8 +15,14 @@
   },
   "files": [
     "index.js",
+    "browser.js",
     "cli.js",
+    "flow.js",
+    "flow-jsdoc.js",
+    "mocha.js",
+    "node.js",
     "react.js",
+    "react-native.js",
     "es5.js"
   ],
   "homepage": "https://github.com/moqada/eslint-config#readme",
