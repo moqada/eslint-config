@@ -469,7 +469,7 @@ module.exports = {
     'newline-before-return': 0,
     // 1行あたりのchain呼出回数を制限
     // http://eslint.org/docs/rules/newline-per-chained-call
-    'newline-per-chained-call': [2, {'ignoreChainWithDepth': 3}], // 1行に3つ以上のchainを警告
+    'newline-per-chained-call': [0, {'ignoreChainWithDepth': 3}], // moment等まとまったほうが嬉しいパターンもあるので無効/ 1行に3つ以上のchainを警告
     // Array コンストラクタでの配列要素作成禁止
     // http://eslint.org/docs/rules/no-array-constructor
     'no-array-constructor': 2,
