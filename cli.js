@@ -1,7 +1,7 @@
 var extend = require('extend');
-var base = require('./');
+var node = require('./node');
 
-module.exports = extend(true, {}, base, {
+module.exports = extend(true, {}, node, {
   rules: {
     /**
      * Possible Errors
