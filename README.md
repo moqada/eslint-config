@@ -103,7 +103,7 @@ extends:
 ##### Additional Requirements
 
 ```
-npm install --save-dev eslint-plugin-jsdoc eslint-plugin-react eslint-plugin-react-native
+npm install --save-dev eslint-plugin-flow-vars eslint-plugin-jsdoc eslint-plugin-react eslint-plugin-react-native
 ```
 
 [npm-url]: https://www.npmjs.com/package/eslint-config-moqada
