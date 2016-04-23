@@ -44,6 +44,12 @@ extends:
   - moqada/node
 ```
 
+##### Additional Requirements
+
+```
+npm install --save-dev eslint-plugin-node
+```
+
 #### ES5 (Browser)
 
 ```yaml
@@ -58,6 +64,12 @@ extends:
 extends:
   - moqada
   - moqada/cli
+```
+
+##### Additional Requirements
+
+```
+npm install --save-dev eslint-plugin-node
 ```
 
 #### React
