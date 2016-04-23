@@ -46,6 +46,9 @@ module.exports = {
     // 属性のイコール周辺の空白スタイル
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-equals-spacing.md
     'react/jsx-equals-spacing': [2, 'never'],
+    // JSXの最初のプロパティの改行方法を指定
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md
+    'react/jsx-first-prop-new-line': [2, 'multiline'],
     // コンポーネントのイベントハンドラ名prefix強制 (ex. <Comp onChange={this.handleChange} />)
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md
     'react/jsx-handler-names': 0,
@@ -121,6 +124,9 @@ module.exports = {
     // require で拡張子を強制
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-extension.md
     'react/require-extension': 0,
+    // renderでreturnを強制
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-render-return.md
+    'react/require-render-return': 2,
     // ES6 class を使うよう強制
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md
     'react/prefer-es6-class': 2,
