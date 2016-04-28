@@ -18,7 +18,7 @@ module.exports = {
     'node/no-unpublished-require': 2,
     // 当該Node.jsバージョンで未サポートの記法を警告
     // https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features.md
-    'node/no-unsupported-features': 0,  // プロジェクト毎に決定
+    'node/no-unsupported-features': 2,
     // shebangが不正に利用されていた場合警告
     // https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/shebang.md
     'node/shebang': 2
