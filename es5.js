@@ -76,6 +76,9 @@ module.exports = extend(true, {}, base, {
     // コンストラクタ内 super の前の this 禁止
     // http://eslint.org/docs/rules/no-this-before-super
     'no-this-before-super': 0,
+    // 不要なcomputed propertiesを禁止
+    // http://eslint.org/docs/rules/no-useless-computed-key
+    'no-useless-computed-key': 0,
     // 不要なコンストラクタ関数の禁止
     // http://eslint.org/docs/rules/no-useless-constructor
     'no-useless-constructor': 0,

@@ -85,6 +85,9 @@ module.exports = {
     // 到達不能コード禁止
     // http://eslint.org/docs/rules/no-unreachable
     'no-unreachable': 2,
+    // finally内でのreturn, throw, break, continueを禁止
+    // http://eslint.org/docs/rules/no-unsafe-finally
+    'no-unsafe-finally': 2,
     // isNaN() の使用強制
     // http://eslint.org/docs/rules/use-isnan
     'use-isnan': 2,
@@ -616,6 +619,9 @@ module.exports = {
     // コンストラクタ内 super の前の this 禁止
     // http://eslint.org/docs/rules/no-this-before-super
     'no-this-before-super': 2,
+    // 不要なcomputed propertiesを禁止
+    // http://eslint.org/docs/rules/no-useless-computed-key
+    'no-useless-computed-key': 2,
     // 不要なコンストラクタ関数の禁止
     // http://eslint.org/docs/rules/no-useless-constructor
     'no-useless-constructor': 2,
