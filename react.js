@@ -70,6 +70,9 @@ module.exports = {
     // props の重複禁止
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md
     'react/jsx-no-duplicate-props': 2,
+    // target='_blank'の禁止
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
+    'react/jsx-no-target-blank': 2,
     // 未定義の React コンポーネントを使用禁止
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-undef.md
     'react/jsx-no-undef': 2,
