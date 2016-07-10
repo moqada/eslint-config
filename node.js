@@ -4,6 +4,9 @@ module.exports = {
   },
   'plugins': ['node'],
   'rules': {
+    // depreactedなAPIを警告
+    // https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md
+    'node/no-deprecated-api': 2,
     // import先が存在しない場合警告
     // https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-missing-import.md
     'node/no-missing-import': 2,

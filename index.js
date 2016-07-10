@@ -21,7 +21,7 @@ module.exports = {
     'no-console': 1,
     // 条件としての定数使用禁止
     // http://eslint.org/docs/rules/no-constant-condition
-    'no-constant-condition': 2,
+    'no-constant-condition': [2, {'checkLoops': false}],  // 無限ループ用は許容
     // 正規表現内の不可視範囲 ASCII コントロール文字使用禁止
     // http://eslint.org/docs/rules/no-control-regex
     'no-control-regex': 2,
@@ -66,13 +66,16 @@ module.exports = {
     'no-invalid-regexp': 2,
     // イレギュラーな空白禁止
     // http://eslint.org/docs/rules/no-irregular-whitespace
-    'no-irregular-whitespace': 2,
+    'no-irregular-whitespace': [2, {'skipRegExps': true, 'skipStrings': true}],  // 正規表現とテンプレートリテラル内は許容する
     // in 演算子左辺の ! 禁止
     // http://eslint.org/docs/rules/no-negated-in-lhs
     'no-negated-in-lhs': 2,
     // Math, JSON の関数呼び出し禁止
     // http://eslint.org/docs/rules/no-obj-calls
     'no-obj-calls': 2,
+    // Object.prototypeのメソッド利用禁止
+    // http://eslint.org/docs/rules/no-prototype-builtins
+    'no-prototype-builtins': 2,
     // 正規表現内の連続空白禁止
     // http://eslint.org/docs/rules/no-regex-spaces
     'no-regex-spaces': 2,
@@ -126,7 +129,7 @@ module.exports = {
     'complexity': [1, 8],  // テスタブル JavaScript には 10 以下が適切とある
     // 一貫性のある return 必須化
     // http://eslint.org/docs/rules/consistent-return
-    'consistent-return': 2,
+    'consistent-return': [2, {'treatUndefinedAsUnspecified': true}],  // undefinedを返す場合は省略可能
     // ブロック用途の中括弧スタイル
     // http://eslint.org/docs/rules/curly
     'curly': [2, 'all'],
@@ -456,6 +459,9 @@ module.exports = {
     // コメントまわりの改行スタイル
     // http://eslint.org/docs/rules/lines-around-comment
     'lines-around-comment': [2, {'beforeBlockComment': true, 'allowBlockStart': true, 'allowObjectStart': true, 'allowArrayStart': true}],
+    // 1ファイルの最大行を制限
+    // http://eslint.org/docs/rules/max-lines
+    'max-lines': 0,
     // callback ネスト数の制限
     // http://eslint.org/docs/rules/max-nested-callbacks
     'max-nested-callbacks': [1, 3],
@@ -489,6 +495,9 @@ module.exports = {
     // else 内の if 禁止
     // http://eslint.org/docs/rules/no-lonely-if
     'no-lonely-if': 2,
+    // 特定の演算子の組み合わせに括弧を強制
+    // http://eslint.org/docs/rules/no-mixed-operators
+    'no-mixed-operators': [2, {'groups': [['&', '|', '^', '~', '<<', '>>', '>>>'], ['&&', '||']]}],
     // 空白とタブの混在禁止
     // http://eslint.org/docs/rules/no-mixed-spaces-and-tabs
     'no-mixed-spaces-and-tabs': 2,
@@ -522,9 +531,15 @@ module.exports = {
     // オブジェクトプロパティアクセスのドット前の空白を禁止
     // http://eslint.org/docs/rules/no-whitespace-before-property
     'no-whitespace-before-property': 2,
+    // オブジェクトリテラル括弧内の改行スタイル
+    // http://eslint.org/docs/rules/object-curly-newline
+    'object-curly-newline': [2, {'minProperties': 3, 'multiline': true}],  // 3属性以上で改行必須、
     // オブジェクトの中括弧内の空白
     // http://eslint.org/docs/rules/object-curly-spacing
     'object-curly-spacing': [2, 'never'],
+    // オブジェクトプロパティ毎の改行を強制する
+    // http://eslint.org/docs/rules/object-property-newline
+    'object-property-newline': [2, {'allowMultiplePropertiesPerLine': true}],  // 1行に全てのプロパティが収まる場合は許可
     // 変数定義初期化スタイル
     // http://eslint.org/docs/rules/one-var
     'one-var': [2, {'uninitialized': 'always', 'initialized': 'never'}],  // 値なしで初期化する場合はvarを1つにまとめ、値ありで初期化する場合はvarを変数分
@@ -579,6 +594,9 @@ module.exports = {
     // コメント内の空白
     // http://eslint.org/docs/rules/spaced-comment
     'spaced-comment': [2, 'always', {'exceptions': ['-+']}],
+    // BOMの扱い
+    // http://eslint.org/docs/rules/unicode-bom
+    'unicode-bom': [2, 'never'],
     // 正規表現を括弧で囲むことを強制
     // http://eslint.org/docs/rules/wrap-regex
     'wrap-regex': 0,
@@ -625,6 +643,9 @@ module.exports = {
     // 不要なコンストラクタ関数の禁止
     // http://eslint.org/docs/rules/no-useless-constructor
     'no-useless-constructor': 2,
+    // import/export/destructuredでの不要なリネーム禁止
+    // http://eslint.org/docs/rules/no-useless-rename
+    'no-useless-rename': 2,
     // var 禁止
     // http://eslint.org/docs/rules/no-var
     'no-var': 2,
@@ -652,6 +673,9 @@ module.exports = {
     // yield の必須化
     // http://eslint.org/docs/rules/require-yield
     'require-yield': 2,
+    // spread演算子とrest演算子の空白スタイル
+    // http://eslint.org/docs/rules/rest-spread-spacing
+    'rest-spread-spacing': [2, 'never'],  // 空白禁止
     // テンプレートリテラルの`${..}`の空白スタイル
     // http://eslint.org/docs/rules/template-curly-spacing
     'template-curly-spacing': [2, 'never'],
