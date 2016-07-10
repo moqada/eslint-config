@@ -46,6 +46,9 @@ module.exports = {
     // 属性のイコール周辺の空白スタイル
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-equals-spacing.md
     'react/jsx-equals-spacing': [2, 'never'],
+    // Componentのファイル拡張子を強制
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
+    'react/jsx-filename-extension': [2, {'extensions': ['.js']}],
     // JSXの最初のプロパティの改行方法を指定
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md
     'react/jsx-first-prop-new-line': [2, 'multiline'],
@@ -88,6 +91,9 @@ module.exports = {
     // JSX 内で使用中の変数への no-unused-vars 発動禁止
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-vars.md
     'react/jsx-uses-vars': 2,
+    // JSX内TextNodeコメント禁止
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-comment-textnodes.md
+    'react/no-comment-textnodes': 2,
     // dangerouslySetInnerHTML の禁止
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger.md
     'react/no-danger': 0,  // 使うときは覚悟を持って使う
@@ -109,6 +115,9 @@ module.exports = {
     // 1 ファイル内複数コンポーネント定義を禁止
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md
     'react/no-multi-comp': 2,
+    // renderの戻り値の使用を禁止
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md
+    'react/no-render-return-value': 2,
     // setState 禁止
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-set-state.md
     'react/no-set-state': 0,  // ストイックすぎる
@@ -127,6 +136,9 @@ module.exports = {
     // require で拡張子を強制
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-extension.md
     'react/require-extension': 0,
+    // shouldComponentUpdateを強制
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-optimization.md
+    'react/require-optimization': 0,
     // renderでreturnを強制
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-render-return.md
     'react/require-render-return': 2,
