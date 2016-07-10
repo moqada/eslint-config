@@ -11,6 +11,12 @@ module.exports = extend(true, {}, react, {
     '__DEV__': true
   },
   'rules': {
+    // スタイルのカラーリテラル使用禁止
+    // https://github.com/Intellicode/eslint-plugin-react-native/blob/master/docs/rules/no-color-literals.md
+    'react-native/no-color-literals': 2,
+    // インラインスタイル直書きを禁止
+    // https://github.com/Intellicode/eslint-plugin-react-native/blob/master/docs/rules/no-inline-styles.md
+    'react-native/no-inline-styles': 2,
     // 未利用のStyleを警告
     // https://github.com/intellicode/eslint-plugin-react-native/blob/master/docs/rules/no-unused-styles.md
     'react-native/no-unused-styles': 2,
