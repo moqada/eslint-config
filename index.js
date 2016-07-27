@@ -468,6 +468,9 @@ module.exports = {
     // 1行の文の数を制限
     // http://eslint.org/docs/rules/max-statements-per-line
     'max-statements-per-line': 0,  // ここまで厳密にしなくてもよさそう
+    // 三項演算子を仕様時に改行を強制
+    // http://eslint.org/docs/rules/multiline-ternary
+    'multiline-ternary': 0,
     // コンストラクタの new 必須化
     // http://eslint.org/docs/rules/new-cap
     'new-cap': 2,
@@ -593,7 +596,7 @@ module.exports = {
     'space-unary-ops': [2, {'words': true, 'nonwords': false}],
     // コメント内の空白
     // http://eslint.org/docs/rules/spaced-comment
-    'spaced-comment': [2, 'always', {'exceptions': ['-+']}],
+    'spaced-comment': [2, 'always', {'exceptions': ['-', '+'], 'block': {'balanced': true}}],
     // BOMの扱い
     // http://eslint.org/docs/rules/unicode-bom
     'unicode-bom': [2, 'never'],
