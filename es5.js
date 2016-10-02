@@ -115,6 +115,9 @@ module.exports = extend(true, {}, base, {
     // spread演算子とrest演算子の空白スタイル
     // http://eslint.org/docs/rules/rest-spread-spacing
     'rest-spread-spacing': 0,
+    // Symbolの第一引数(説明)を強制
+    // http://eslint.org/docs/rules/symbol-description
+    'symbol-description': 0,
     // テンプレートリテラルの`${..}`の空白スタイル
     // http://eslint.org/docs/rules/template-curly-spacing
     'template-curly-spacing': 0,

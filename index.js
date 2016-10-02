@@ -127,6 +127,9 @@ module.exports = {
     // C-style なブロック scope var を強制
     // http://eslint.org/docs/rules/block-scoped-var
     'block-scoped-var': 0,
+    // thisを参照していないメソッドを警告
+    // http://eslint.org/docs/rules/class-methods-use-this
+    'class-methods-use-this': 2,
     // 複雑度
     // http://eslint.org/docs/rules/complexity
     'complexity': [1, 8],  // テスタブル JavaScript には 10 以下が適切とある
@@ -688,6 +691,9 @@ module.exports = {
     // spread演算子とrest演算子の空白スタイル
     // http://eslint.org/docs/rules/rest-spread-spacing
     'rest-spread-spacing': [2, 'never'],  // 空白禁止
+    // Symbolの第一引数(説明)を強制
+    // http://eslint.org/docs/rules/symbol-description
+    'symbol-description': 2,
     // テンプレートリテラルの`${..}`の空白スタイル
     // http://eslint.org/docs/rules/template-curly-spacing
     'template-curly-spacing': [2, 'never'],
