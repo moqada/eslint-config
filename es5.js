@@ -97,6 +97,9 @@ module.exports = extend(true, {}, base, {
     // const の利用提案
     // http://eslint.org/docs/rules/prefer-const
     'prefer-const': 0,
+    // 定数値のparseIntで数値リテラルの利用を提案
+    // http://eslint.org/docs/rules/prefer-numeric-literals
+    'prefer-numeric-literals': 0,
     // Reflect メソッドの利用提案
     // http://eslint.org/docs/rules/prefer-reflect
     'prefer-reflect': 0,

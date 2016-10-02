@@ -263,6 +263,9 @@ module.exports = {
     // 変数の再定義禁止
     // http://eslint.org/docs/rules/no-redeclare
     'no-redeclare': [2, {'builtinGlobals': true}],
+    // 指定名称のプロパティアクセスを禁止
+    // http://eslint.org/docs/rules/no-restricted-properties
+    'no-restricted-properties': 0,
     // return 文での変数代入禁止
     // http://eslint.org/docs/rules/no-return-assign
     'no-return-assign': 2,
@@ -462,12 +465,18 @@ module.exports = {
     // キーワードまわりの空白スタイル
     // http://eslint.org/docs/rules/keyword-spacing
     'keyword-spacing': [2, {'before': true, 'after': true}],
+    // 行コメントの位置スタイル
+    // http://eslint.org/docs/rules/line-comment-position
+    'line-comment-position': 0,  // 状況によって変えたい
     // 改行コードを指定
     // http://eslint.org/docs/rules/linebreak-style
     'linebreak-style': [2, 'unix'],
     // コメントまわりの改行スタイル
     // http://eslint.org/docs/rules/lines-around-comment
     'lines-around-comment': [2, {'beforeBlockComment': true, 'allowBlockStart': true, 'allowObjectStart': true, 'allowArrayStart': true}],
+    // ディレクティブ(ex. "use strict")前後の空白スタイル
+    // http://eslint.org/docs/rules/lines-around-directive
+    'lines-around-directive': [2, 'always'],
     // 1ファイルの最大行を制限
     // http://eslint.org/docs/rules/max-lines
     'max-lines': 0,
@@ -673,6 +682,9 @@ module.exports = {
     // const の利用提案
     // http://eslint.org/docs/rules/prefer-const
     'prefer-const': 2,
+    // 定数値のparseIntで数値リテラルの利用を提案
+    // http://eslint.org/docs/rules/prefer-numeric-literals
+    'prefer-numeric-literals': 2,
     // Reflect メソッドの利用提案
     // http://eslint.org/docs/rules/prefer-reflect
     'prefer-reflect': 0,  // babel-runtime なしで delete とか使いたいときがある
@@ -709,7 +721,7 @@ module.exports = {
     'max-depth': [1, 3],
     // 1行の長さ
     // http://eslint.org/docs/rules/max-len
-    'max-len': [1, {'code': 100, 'tabWidth': 2, 'ignoreUrls': true}],  // URLは無視
+    'max-len': [1, {'code': 100, 'tabWidth': 2, 'ignoreStrings': true, 'ignoreTemplateLiterals': true, 'ignoreUrls': true}],  // 文字列、テンプレートリテラル、URLは無視
     // 引数の数
     // http://eslint.org/docs/rules/max-params
     'max-params': [1, 3],
