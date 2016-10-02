@@ -4,6 +4,9 @@ module.exports = {
   },
   'plugins': ['node'],
   'rules': {
+    // exportsスタイル強制
+    // https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/exports-style.md
+    'node/exports-style': [2, 'module.exports'],
     // depreactedなAPIを警告
     // https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md
     'node/no-deprecated-api': 2,
@@ -13,6 +16,9 @@ module.exports = {
     // require先が存在しない場合警告
     // https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-missing-require.md
     'node/no-missing-require': 2,
+    // binがpackage.jsonのfilesにない場合に警告
+    // https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-bin.md
+    'node/no-unpublished-bin': 2,
     // publishされないモジュールをimportした場合警告
     // https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-import.md
     'node/no-unpublished-import': 2,
