@@ -67,9 +67,9 @@ module.exports = {
     // イレギュラーな空白禁止
     // http://eslint.org/docs/rules/no-irregular-whitespace
     'no-irregular-whitespace': [2, {'skipRegExps': true, 'skipStrings': true}],  // 正規表現とテンプレートリテラル内は許容する
-    // in 演算子左辺の ! 禁止
-    // http://eslint.org/docs/rules/no-negated-in-lhs
-    'no-negated-in-lhs': 2,
+    // 意図しないNOT演算子を禁止
+    // http://eslint.org/docs/rules/no-unsafe-negation
+    'no-unsafe-negation': 2,
     // Math, JSON の関数呼び出し禁止
     // http://eslint.org/docs/rules/no-obj-calls
     'no-obj-calls': 2,
@@ -82,6 +82,9 @@ module.exports = {
     // 要素のないカンマのみの配列禁止
     // http://eslint.org/docs/rules/no-sparse-arrays
     'no-sparse-arrays': 2,
+    // 文字列中のテンプレートリテラル埋め込み式を禁止
+    // http://eslint.org/docs/rules/no-template-curly-in-string
+    'no-template-curly-in-string': 2,
     // 不正な複数行記述の禁止 (semi が off の場合のみ有効)
     // http://eslint.org/docs/rules/no-unexpected-multiline
     'no-unexpected-multiline': 0,
@@ -187,6 +190,9 @@ module.exports = {
     // case 文の意図しない fallthrough を禁止
     // http://eslint.org/docs/rules/no-fallthrough
     'no-fallthrough': 2,
+    // 読み取り専用グローバル変数への代入禁止
+    // http://eslint.org/docs/rules/no-global-assign
+    'no-global-assign': 2,
     // 数字なしの小数点禁止
     // http://eslint.org/docs/rules/no-floating-decimal
     'no-floating-decimal': 2,
@@ -227,9 +233,6 @@ module.exports = {
     // 複数行文字列禁止
     // http://eslint.org/docs/rules/no-multi-str
     'no-multi-str': 2,
-    // 組み込みオブジェクトへの再代入禁止
-    // http://eslint.org/docs/rules/no-native-reassign
-    'no-native-reassign': 2,
     // 変数代入しない new 禁止
     // http://eslint.org/docs/rules/no-new
     'no-new': 2,
@@ -265,7 +268,7 @@ module.exports = {
     'no-script-url': 2,
     // 自己代入(同名変数への再代入)を禁止
     // http://eslint.org/docs/rules/no-self-assign
-    'no-self-assign': 2,
+    'no-self-assign': [2, {'props': true}],  // プロパティについても禁止
     // 同変数比較禁止 (x === x)
     // http://eslint.org/docs/rules/no-self-compare
     'no-self-compare': 2,
@@ -426,6 +429,9 @@ module.exports = {
     // ファイル末尾の空白行必須化
     // http://eslint.org/docs/rules/eol-last
     'eol-last': 2,
+    // 関数呼び出しの括弧前の空白スタイル
+    // http://eslint.org/docs/rules/func-call-spacing
+    'func-call-spacing': 2,
     // 関数名を持たせるための function 式を強制
     // http://eslint.org/docs/rules/func-names
     'func-names': 2,
@@ -519,9 +525,6 @@ module.exports = {
     // 制限された構文を禁止
     // http://eslint.org/docs/rules/no-restricted-syntax
     'no-restricted-syntax': 0,  // no-with, func-style で同様の制限をしているので無視
-    // 関数呼び出し時の空白禁止
-    // http://eslint.org/docs/rules/no-spaced-func
-    'no-spaced-func': 2,
     // タブの使用禁止
     // http://eslint.org/docs/rules/no-tabs
     'no-tabs': 2,
@@ -579,6 +582,9 @@ module.exports = {
     // importをアルファベット順に制限
     // http://eslint.org/docs/rules/sort-imports
     'sort-imports': 0,  // 期待するソートじゃない
+    // オブジェクトプロパティををアルファベット順に制限
+    // http://eslint.org/docs/rules/sort-keys
+    'sort-keys': [2, 'asc', {'caseSensitive': true, 'natural': false}],
     // 変数定義をアルファベット順に制限
     // http://eslint.org/docs/rules/sort-vars
     'sort-vars': 2,
