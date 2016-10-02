@@ -443,7 +443,7 @@ module.exports = {
     'id-match': 0,
     // インデントスタイル
     // http://eslint.org/docs/rules/indent
-    'indent': [2, 2],
+    'indent': [2, 2, {'MemberExpression': 1}],  // プロパティアクセスのインデントを指定
     // JSX 属性のクオートスタイル
     // http://eslint.org/docs/rules/jsx-quotes
     'jsx-quotes': 0,  // moqada/react 側で有効化
@@ -522,6 +522,9 @@ module.exports = {
     // 関数呼び出し時の空白禁止
     // http://eslint.org/docs/rules/no-spaced-func
     'no-spaced-func': 2,
+    // タブの使用禁止
+    // http://eslint.org/docs/rules/no-tabs
+    'no-tabs': 2,
     // 行末の空白禁止
     // http://eslint.org/docs/rules/no-trailing-spaces
     'no-trailing-spaces': 2,
