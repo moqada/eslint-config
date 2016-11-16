@@ -9,12 +9,12 @@
   "author": "moqada",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^3.7.0",
+    "eslint": "^3.10.2",
     "eslint-config-moqada": "file:..",
-    "eslint-plugin-flowtype": "^2.19.0",
+    "eslint-plugin-flowtype": "^2.25.0",
     "eslint-plugin-jsdoc": "^2.3.1",
-    "eslint-plugin-node": "^2.1.2",
-    "eslint-plugin-react": "^6.3.0",
+    "eslint-plugin-node": "^3.0.3",
+    "eslint-plugin-react": "^6.7.1",
     "eslint-plugin-react-native": "^2.0.0"
   },
   "private": true
