@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-moqada",
   "description": "My personal ESLint configurations.",
-  "version": "17.0.2",
+  "version": "18.0.0",
   "author": "moqada",
   "bugs": {
     "url": "https://github.com/moqada/eslint-config/issues"
