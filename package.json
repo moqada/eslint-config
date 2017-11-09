@@ -10,12 +10,12 @@
     "extend": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "^3.10.2",
-    "eslint-plugin-flowtype": "^2.25.0",
-    "eslint-plugin-jsdoc": "^3.0.2",
-    "eslint-plugin-node": "^4.0.1",
-    "eslint-plugin-react": "^7.0.1",
-    "eslint-plugin-react-native": "^2.0.0"
+    "eslint": "^4.12.1",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-jsdoc": "^3.2.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-react-native": "^3.1.0"
   },
   "files": [
     "index.js",
