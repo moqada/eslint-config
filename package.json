@@ -10,7 +10,7 @@
     "extend": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "^3.10.2",
+    "eslint": "^4.11.0",
     "eslint-plugin-flowtype": "^2.25.0",
     "eslint-plugin-jsdoc": "^3.0.2",
     "eslint-plugin-node": "^4.0.1",
