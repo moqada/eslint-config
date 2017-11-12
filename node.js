@@ -10,6 +10,12 @@ module.exports = {
     // depreactedなAPIを警告
     // https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md
     'node/no-deprecated-api': 2,
+    // package.jsonにないモジュールのimportを禁止
+    // https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-extraneous-import.md
+    'node/no-extraneous-import': 2,
+    // package.jsonにないモジュールのrequireを禁止
+    // https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-extraneous-require.md
+    'node/no-extraneous-require': 2,
     // import先が存在しない場合警告
     // https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-missing-import.md
     'node/no-missing-import': 2,
