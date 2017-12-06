@@ -20,14 +20,21 @@ module.exports = {
     'ReactComponent': true,
     'ReactElement': true
   },
-  'plugins': ['flowtype'],
+  'plugins': ['flowtype', 'import'],
   'rules': {
+    // flowの`import type {..} form './foo'`を考慮してくれる
+    'no-duplicate-imports': 0,
+    'import/no-duplicates': 2,
+
+    /**
+     * Flow
+     */
     // boolean typeのスタイル
     // https://github.com/gajus/eslint-plugin-flowtype
     'flowtype/boolean-style': [2, 'boolean'],
     // 未定義のflowtypeを警告
     // https://github.com/gajus/eslint-plugin-flowtype
-    'flowtype/define-flow-type': [2, {'no-use-before-define': [2, 'nofunc']}],
+    'flowtype/define-flow-type': 2,
     // ケツカンマのスタイル
     // https://github.com/gajus/eslint-plugin-flowtype
     'flowtype/delimiter-dangle': [2, 'never'],
@@ -37,6 +44,18 @@ module.exports = {
     // キーの重複禁止
     // https://github.com/gajus/eslint-plugin-flowtype
     'flowtype/no-dupe-keys': 2,
+    // Array, []の使用禁止 ($ReadOnlyArrayを強制)
+    // https://github.com/gajus/eslint-plugin-flowtype#no-mutable-array
+    'flowtype/no-mutable-array': 0,  // 書くのとかつらそう
+    // プリミティブ型のconstructorを型として使用禁止
+    // https://github.com/gajus/eslint-plugin-flowtype#no-primitive-constructor-types
+    'flowtype/no-primitive-constructor-types': 2,
+    // flow annotation忘れ防止
+    // https://github.com/gajus/eslint-plugin-flowtype#no-types-missing-file-annotation
+    'flowtype/no-types-missing-file-annotation': 2,
+    // 未使用の式を禁止
+    // https://github.com/gajus/eslint-plugin-flowtype#no-unused-expressions
+    'flowtype/no-unused-expressions': 2,
     // 逃げの型を禁止
     // https://github.com/gajus/eslint-plugin-flowtype
     'flowtype/no-weak-types': 0,  // 逃げたいときはある
@@ -51,13 +70,16 @@ module.exports = {
     'flowtype/require-return-type': 0,  // flow側にまかせたいときがある
     // flow annotationを強制
     // https://github.com/gajus/eslint-plugin-flowtype
-    'flowtype/require-valid-file-annotation': 2,
+    'flowtype/require-valid-file-annotation': [2, 'always'],
+    // 変数の型付けを強制
+    // https://github.com/gajus/eslint-plugin-flowtype#require-variable-type
+    'flowtype/require-variable-type': 0,  // flow側にまかせたいときがある
     // セミコロンのスタイル
     // https://github.com/gajus/eslint-plugin-flowtype
     'flowtype/semi': [2, 'always'],
     // プロパティの並び順
     // https://github.com/gajus/eslint-plugin-flowtype
-    'flowtype/sort-keys': [2, 'asc', {'caseSensitive': true, 'natural': false}],
+    'flowtype/sort-keys': [2, 'asc', {'caseSensitive': true, 'natural': true}],
     // コロン後の空白スタイル
     // https://github.com/gajus/eslint-plugin-flowtype
     'flowtype/space-after-type-colon': [2, 'always'],
@@ -75,7 +97,7 @@ module.exports = {
     'flowtype/union-intersection-spacing': [2, 'always'],
     // type aliasを使用したものと解釈
     // https://github.com/gajus/eslint-plugin-flowtype
-    'flowtype/use-flow-type': [2, {'no-unused-vars': 1}]
+    'flowtype/use-flow-type': 2
   },
   'settings': {
     'flowtype': {
