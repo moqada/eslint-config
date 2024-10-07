@@ -19,6 +19,18 @@
     "eslint-plugin-react": "^7.37.1",
     "eslint-plugin-react-native": "^4.1.0"
   },
+  "exports": {
+    ".": "./index.js",
+    "./browser": "./browser.js",
+    "./cli": "./cli.js",
+    "./es5": "./es5.js",
+    "./flow": "./flow.js",
+    "./flow-jsdoc": "./flow-jsdoc.js",
+    "./mocha": "./mocha.js",
+    "./node": "./node.js",
+    "./react": "./react.js",
+    "./react-native": "./react-native.js"
+  },
   "files": [
     "index.js",
     "browser.js",
@@ -44,5 +56,6 @@
   },
   "scripts": {
     "test": "bash test.sh"
-  }
+  },
+  "type": "module"
 }
