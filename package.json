@@ -55,6 +55,7 @@
     "url": "https://github.com/moqada/eslint-config.git"
   },
   "scripts": {
+    "lint": "eslint",
     "test": "bash test.sh"
   },
   "type": "module"
