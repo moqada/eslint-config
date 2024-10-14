@@ -9,17 +9,17 @@ My personal ESLint configurations.
 ## Installation
 
 ```
-npm install --save-dev eslint eslint-config-moqada
+npm install --save-dev eslint eslint-config-moqada eslint-plugin-jsdoc
 ```
 
 ## Usage
 
-Add `.eslintrc` (YAML).
+Add `eslint.config.js`.
 
 ### Summary
 
 - **Base**
-  - `moqada`: ES2015
+  - `moqada`: Default
   - `moqada/es5`: ES5
 - **Optional**
   - `moqada/browser`: Browser env
@@ -35,10 +35,13 @@ Add `.eslintrc` (YAML).
 
 #### ES6 (Node.js)
 
-```yaml
-extends:
-  - moqada
-  - moqada/node
+```js
+import configMoqada from 'eslint-config-moqada';
+import configMoqadaNode from 'eslint-config-moqada/node';
+export default [
+  ...configMoqada,
+  ...configMoqadaNode,
+];
 ```
 
 ##### Additional Requirements
@@ -49,18 +52,24 @@ npm install --save-dev eslint-plugin-node
 
 #### ES5 (Browser)
 
-```yaml
-extends:
-  - moqada/es5
-  - moqada/browser
+```js
+import configMoqadaEs5 from 'eslint-config-moqada/es5';
+import configMoqadaBrowser from 'eslint-config-moqada/browser';
+export default [
+  ...configMoqadaEs5,
+  ...configMoqadaBrowser,
+];
 ```
 
 #### CLI
 
-```yaml
-extends:
-  - moqada
-  - moqada/cli
+```js
+import configMoqada from 'eslint-config-moqada';
+import configMoqadaCli from 'eslint-config-moqada/cli';
+export default [
+  ...configMoqada,
+  ...configMoqadaCli,
+];
 ```
 
 ##### Additional Requirements
@@ -71,11 +80,15 @@ npm install --save-dev eslint-plugin-node
 
 #### React
 
-```yaml
-extends:
-  - moqada
-  - moqada/browser
-  - moqada/react
+```js
+import configMoqada from 'eslint-config-moqada';
+import configMoqadaBrowser from 'eslint-config-moqada/browser';
+import configMoqadaReact from 'eslint-config-moqada/react';
+export default [
+  ...configMoqada,
+  ...configMoqadaBrowser,
+  ...configMoqadaReact,
+];
 ```
 
 ##### Additional Requirements
@@ -86,10 +99,13 @@ npm install --save-dev eslint-plugin-react
 
 #### React Native
 
-```yaml
-extends:
-  - moqada
-  - moqada/react-native
+```js
+import configMoqada from 'eslint-config-moqada';
+import configMoqadaReactNative from 'eslint-config-moqada/react-native';
+export default [
+  ...configMoqada,
+  ...configMoqadaReactNative,
+];
 ```
 
 ##### Additional Requirements
@@ -101,12 +117,17 @@ npm install --save-dev eslint-plugin-react eslint-plugin-react-native
 
 #### React Native with Flow
 
-```yaml
-extends:
-  - moqada
-  - moqada/react-native
-  - moqada/flow
-  - moqada/flow-jsdoc
+```js
+import configMoqada from 'eslint-config-moqada';
+import configMoqadaReactNative from 'eslint-config-moqada/react-native';
+import configMoqadaFlow from 'eslint-config-moqada/flow';
+import configMoqadaFlowJsdoc from 'eslint-config-moqada/flow-jsdoc';
+export default [
+  ...configMoqada,
+  ...configMoqadaReactNative,
+  ...configMoqadaFlow,
+  ...configMoqadaFlowJsdoc,
+];
 ```
 
 ##### Additional Requirements
