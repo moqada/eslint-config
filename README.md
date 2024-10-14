@@ -138,11 +138,5 @@ npm install --save-dev eslint-plugin-flowtype eslint-plugin-jsdoc eslint-plugin-
 
 [npm-url]: https://www.npmjs.com/package/eslint-config-moqada
 [npm-image]: https://img.shields.io/npm/v/eslint-config-moqada.svg?style=flat-square
-[travis-url]: https://travis-ci.org/moqada/eslint-config
-[travis-image]: https://img.shields.io/travis/moqada/eslint-config.svg?style=flat-square
-[daviddm-url]: https://david-dm.org/moqada/eslint-config
-[daviddm-image]: https://img.shields.io/david/moqada/eslint-config.svg?style=flat-square
-[daviddm-dev-url]: https://david-dm.org/moqada/eslint-config#info=devDependencies
-[daviddm-dev-image]: https://img.shields.io/david/dev/moqada/eslint-config.svg?style=flat-square
 [license-url]: http://opensource.org/licenses/MIT
 [license-image]: https://img.shields.io/npm/l/eslint-config-moqada.svg?style=flat-square
