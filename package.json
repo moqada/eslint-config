@@ -17,7 +17,7 @@
     "eslint-plugin-jsdoc": "^50.4.1",
     "eslint-plugin-n": "^17.11.1",
     "eslint-plugin-react": "^7.37.1",
-    "eslint-plugin-react-native": "^4.1.0"
+    "eslint-plugin-react-native": "^5.0.0"
   },
   "exports": {
     ".": "./index.js",
@@ -50,6 +50,14 @@
   ],
   "license": "MIT",
   "main": "index.js",
+  "pearDependencies": {
+    "eslint-plugin-react-native": "^5.0.0"
+  },
+  "pearDependenciesMeta": {
+    "eslint-plugin-react-native": {
+      "optional": true
+    }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/moqada/eslint-config.git"
