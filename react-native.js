@@ -1,11 +1,10 @@
-import {fixupPluginRules} from '@eslint/compat';
 import reactNativePlugin from 'eslint-plugin-react-native';
 import reactConfig from './react.js';
 
 export default [
   ...reactConfig,
   {
-    plugins: {'react-native': fixupPluginRules(reactNativePlugin)},
+    plugins: {'react-native': reactNativePlugin},
     languageOptions: {
       globals: {
         __DEV__: true,
