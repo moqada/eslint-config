@@ -9,7 +9,7 @@
   "author": "moqada",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^9.12.0",
+    "eslint": "^10.0.0",
     "eslint-config-moqada": "file:..",
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.31.0",
